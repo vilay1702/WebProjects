@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Vilay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page">
+        <h2> Start the game.</h2>
+        <input type="button" value="Start" id="start" onclick="start()">
+        <table>
+            <tr>
+                <td onclick="changeOption(this)" class="cell top left"></td>
+                <td onclick="changeOption(this)" class="cell top"></td>
+                <td onclick="changeOption(this)" class="cell top right"></td>
+            </tr>
+            <tr>
+                <td onclick="changeOption(this)" class="cell left"></td>
+                <td onclick="changeOption(this)" class="cell "></td>
+                <td onclick="changeOption(this)" class="cell right"></td>
+            </tr>
+            <tr>
+                <td onclick="changeOption(this)" class="cell bottom left"></td>
+                <td onclick="changeOption(this)" class="cell bottom"></td>
+                <td onclick="changeOption(this)" class="cell bottom right"></td>
+            </tr>
+        </table>
+        <div id="turnIndicator">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

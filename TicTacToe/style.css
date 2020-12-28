@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+#page{
+    width: 80vw;
+    height: 100%;
+    padding: 20px 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(6, 75, 0);
+    color: #ffffff;
+}
+
+#turnIndicator, #page h2{
+    background-color: #00000071;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table{
+    margin: 60px;
+}
+
+#start{
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 30px;
+    
+}
+
+table tr td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white; 
+    border-collapse: collapse;
+    color: white;
+    font-size: 2em;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+table tr td:hover{
+    cursor: pointer;
+    background-color: #0000002c;
+}
+
+.left{
+    border-left: 0px;
+}
+.right{
+    border-right: 0px;
+}
+.top{
+    border-top: 0px;
+}
+.bottom{
+    border-bottom: 0px;
+}
+
+
+
