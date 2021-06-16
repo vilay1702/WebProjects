@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+  /* border: 1px solid #ffffff; */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px 5px #a5a5a5;
+  border-radius: 5px;
+}
+
+.heading1 {
+  padding: 10px 0px;
+}
+
+/* =============================== Heading =============================== */
+
+#heading {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#resultModal {
+  opacity: 0%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 24px;
+  transition: all 0.4s ease;
+}
+
+#resultModalBtn {
+  float: right;
+  cursor: pointer;
+}
+
+/* ============================== Game area ============================== */
+
+#gameArea {
+  /* background-color: #154743; */
+  /* background: radial-gradient(#1e635d, #1c2928); */
+  background: linear-gradient(to right, #142016, #16721b, #142016);
+  /* background: linear-gradient(to right, #0d152b, #254b9b, #0d152b); */
+  border: 1px solid #000000;
+}
+
+#cardArea {
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+}
+
+.board {
+  width: 50%;
+  border: 1px solid #f0f0f0;
+  /* background-color: #0e0e0e48; */
+  min-height: 400px;
+  height: auto;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.board img {
+  width: 20%;
+  margin: 5px;
+  /* Additional Styling to Image */
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px 1px #141414;
+}
+
+/* .board:nth-child(1){
+    background: linear-gradient();
+} */
+
+#buttonArea {
+  margin: 5px;
+  padding: 5px 0px;
+  border: 1px solid #5a5a5a;
+  /* background-color: #f0feff; */
+}
+
+#controls {
+  width: fit-content;
+  /* border: 1px solid #000000; */
+  margin: auto;
+}
+
+.btn {
+  padding: 8px 12px;
+  margin: 10px;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 1px #3b3b3b;
+}
+
+.btn:hover {
+  border: 2px solid #000000;
+}
+
+#youButton {
+  background-color: #077210;
+}
+#oppButton {
+  background-color: #bb1f1f;
+}
+#resetButton {
+  background-color: #202020;
+}
+
+/* =============================== Scores =============================== */
+
+#scores table {
+  border: 1px solid #000000;
+  margin: 10px auto;
+  text-align: center;
+  box-shadow: 0px 1px 4px 0px #333333;
+}
+
+#myScore {
+  background-color: #077210;
+  color: #ffffff;
+}
+#oppScore {
+  background-color: #bb1f1f;
+  color: #ffffff;
+}
+#draws {
+  background-color: #202020;
+  color: #ffffff;
+}
+
+#scores table tr th,
+#scores table tr td {
+  padding: 5px;
+}
+
+/* ========================= Responsive ========================== */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+
+  #cardArea {
+    flex-direction: column;
+  }
+
+  .board {
+    width: 97%;
+  }
+
+  .board img {
+    width: 25%;
+  }
+
+  .btn:hover {
+    border: 0px solid transparent;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Jack Game</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section id="heading">
+        <h1 class="heading1">Welcome to the Black Jack Game</h1>
+        <h3 class="heading1">Click <u>You</u> to start play</h3>
+        <div id="resultModal">
+          <span> You Won!! </span>
+          <i id="resultModalBtn" class="fa fa-close"></i>
+        </div>
+      </section>
+      <section id="gameArea">
+        <div id="cardArea">
+          <div class="board" id="you">
+            <h1 class="heading1">You: <span id="myPoints">0</span></h1>
+          </div>
+          <div class="board" id="opponent">
+            <h1 class="heading1">Opponent: <span id="oppPoints">0</span></h1>
+          </div>
+        </div>
+      </section>
+      <div id="buttonArea">
+        <div id="controls">
+          <button id="youButton" class="btn">You</button>
+          <button id="oppButton" class="btn">Opponent</button>
+          <button id="resetButton" class="btn">Reset</button>
+        </div>
+      </div>
+      <section id="scores">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td id="myScore">0</td>
+            <td id="oppScore">0</td>
+            <td id="draws">0</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <script src="blackJack.js"></script>
+  </body>
+</html>
