@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soft elements</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="softElements.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo">Logo</div>
+        <ul>
+          <li><a href="" class="navLink">Link1</a></li>
+          <li><a href="" class="navLink">Link2</a></li>
+          <li><a href="" class="navLink">Link3</a></li>
+          <li><a href="" class="navLink">Link4</a></li>
+        </ul>
+        <input type="search" name="" id="" placeholder="Search..." />
+      </nav>
+    </header>
+    <section class="container">
+      <section class="card">
+        <img
+          src="https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_960_720.jpg"
+          alt="demo"
+        />
+        <div class="cardBody">
+          <h3>Card</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            voluptas officiis iure fugit sapiente. Non maxime praesentium
+            accusantium dolor ipsa dolorem adipisci quia? Ad voluptatem
+            excepturi vero. Eum, est vitae.
+          </p>
+        </div>
+      </section>
+      <section id="changeTheme" class="lightTheme">
+        <div id="toggler">
+          <div id="toggleBtn"></div>
+        </div>
+        <h2>Theme Toggler</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          accusamus repellat nostrum dicta recusandae laboriosam veniam
+          perspiciatis aspernatur natus corporis blanditiis eos, dolores
+          delectus molestias reiciendis similique, soluta nisi esse sunt officia
+          placeat tempora suscipit cupiditate? A porro atque maxime ipsum
+          commodi, modi aperiam incidunt nesciunt laudantium asperiores beatae
+          deserunt!
+        </p>
+      </section>
+
+      <section class="musicPlayerUI">
+        <div class="header">
+          <i class="fa fa-angle-left"></i>
+          <h4>Road Trippin</h4>
+          <i class="fa fa-ellipsis-h"></i>
+        </div>
+        <img
+          src="https://cdn.pixabay.com/photo/2015/06/07/18/41/birds-800671_960_720.jpg"
+          alt="Song Img"
+        />
+        <div class="songInfo">
+          <h2>Lose Yourself</h2>
+          <h3>Eminem</h3>
+        </div>
+        <progress value="65" max="100"></progress>
+        <div class="controlButtons">
+          <i class="fa fa-step-backward"></i>
+          <i class="fa fa-pause"></i>
+          <i class="fa fa-step-forward"></i>
+        </div>
+        <div class="line"></div>
+      </section>
+    </section>
+
+    <script>
+      let togglerBtn = document.querySelector("#toggleBtn");
+      let themeHandler = document.querySelector("#changeTheme");
+      let currentTheme = "lightTheme";
+      togglerBtn.addEventListener("click", () => {
+        if (currentTheme === "lightTheme") {
+          currentTheme = "darkTheme";
+        } else {
+          currentTheme = "lightTheme";
+        }
+        togglerBtn.classList.toggle("toggleEffect");
+        themeHandler.classList = currentTheme;
+      });
+    </script>
+  </body>
+</html>
