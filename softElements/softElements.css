@@ -235,3 +235,12 @@ nav input {
   background-color: #5a5a5a;
   border-radius: 5px;
 }
+
+
+@media only screen and (max-width:800px){
+  nav{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
