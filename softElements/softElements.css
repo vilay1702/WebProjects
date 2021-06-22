@@ -15,6 +15,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.container section{
+  margin: 20px;
+}
 
 /* navigation bar  */
 nav {
@@ -234,6 +237,29 @@ nav input {
   height: 5px;
   background-color: #5a5a5a;
   border-radius: 5px;
+}
+
+/* Bubble  */
+.bubble {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px 100px 100px 100px;
+  background-color: #bcbcbc;
+  box-shadow: inset 0px 15px 30px 8px #ffffff, 0px 50px 30px 3px #464646,
+    0px 0px 3px 0px #d6d6d6;
+  /* animation: moveBubble 1s infinite; */
+  transition: all 0.5s ease-in-out;
+}
+
+/* Water drop  */
+.waterDrop {
+  width: 200px;
+  height: 200px;
+  border-radius: 3px 87px 111px 87px;
+  background-color: #cdcdcd;
+  transform: rotate(45deg);
+  box-shadow: 25px 26px 26px 2px #454545,
+    inset -15px -15px 30px 5px #ffffff;
 }
 
 
